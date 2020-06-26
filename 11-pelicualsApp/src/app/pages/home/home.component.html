@@ -1,0 +1,8 @@
+<div class="container main-container">
+    <div class="jumbotron">
+  <h1 class="display-4">The MovieApp</h1>
+    </div>
+    <app-cartelera [peliculasCartelera]="peliculasCartelera | slice:0:6"></app-cartelera >
+    <app-cartelera [peliculasCartelera]="peliculas | slice:0:6" titulo="Peliculas populares"></app-cartelera >
+    <app-cartelera [peliculasCartelera]="peliculasInfantiles | slice:0:6" titulo="Peliculas infantiles populares"></app-cartelera >
+</div>

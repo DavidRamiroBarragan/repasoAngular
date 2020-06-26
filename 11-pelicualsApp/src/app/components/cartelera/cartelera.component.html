@@ -1,0 +1,59 @@
+<h2 class="mt-4">{{titulo}}</h2>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="peliculasCartelera">
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-md-12 div-pic-1 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[0]?.id ]"
+             [style.background-image]="'url('+(peliculasCartelera[0] | image)+')'">
+             <div class="pic-titulo">{{peliculasCartelera[0].title}}</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 div-pic-2 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[1]?.id ]"
+               [style.background-image]="'url('+(peliculasCartelera[1] | image)+')'">
+               <div class="pic-titulo">{{peliculasCartelera[1].title}}</div>
+        </div>
+        <div class="col-sm-6 div-pic-2 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[2]?.id ]"
+               [style.background-image]="'url('+(peliculasCartelera[2] | image)+')'">
+               <div class="pic-titulo">{{peliculasCartelera[2].title}}</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-6">
+
+
+      <div class="row">
+        <div class="col-sm-6 div-pic-2 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[3]?.id ]"
+               [style.background-image]="'url('+(peliculasCartelera[3] | image)+')'">
+               <div class="pic-titulo">{{peliculasCartelera[3].title}}</div>
+        </div>
+        <div class="col-sm-6 div-pic-2 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[4]?.id ]"
+               [style.background-image]="'url('+(peliculasCartelera[4] | image)+')'">
+               <div class="pic-titulo">{{peliculasCartelera[4].title}}</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 div-pic-1 puntero"
+        [routerLink]="['/pelicula', peliculasCartelera[5]?.id ]"
+         [style.background-image]="'url('+(peliculasCartelera[5] | image)+')'">
+         <div class="pic-titulo">{{peliculasCartelera[5].title}}</div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+
+  </div>
